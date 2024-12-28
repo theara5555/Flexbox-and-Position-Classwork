@@ -272,3 +272,15 @@ h1 {
   cursor: default;
   color: white;
 }
+.typed-element {
+  text-align: center;
+}
+[data-aos] {
+  transition-property: transform, opacity !important;
+}
+[data-aos][data-aos-delay='200'] {
+  transition-delay: 200ms;
+}
+[data-aos][data-aos-delay='400'] {
+  transition-delay: 400ms;
+}

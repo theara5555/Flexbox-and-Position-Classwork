@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex box from</title>
+    <title>ClassWork</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link
       rel="stylesheet"
@@ -15,6 +15,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
   </head>
   <body>
@@ -40,7 +44,7 @@
       <section>
         <div class="title">
           <h2>Most Popular Course</h2>
-          <p>choose from hundred of specialist organization.</p>
+          <p><span Id="typed-element"></span></p>
         </div>
         <div class="tabs">
           <button class="tab">Web Design</button>
@@ -49,7 +53,7 @@
           <button class="tab">Marketing</button>
           <button class="tab">Finance</button>
         </div>
-        <div class="card-container">
+        <div class="card-container" data-aos="fade-up">
           <div class="card">
             <div class="image">
               <img src="img/1.png" alt="course thumbn" />
@@ -363,5 +367,26 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        offset: 100,
+        once: true,
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        new Typed('#typed-element', {
+          strings: [
+            'Welcome to My Website!',
+            'Chhose popular course!',
+            'Scroll Down to Discover More!',
+          ],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>

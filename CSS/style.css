@@ -114,6 +114,7 @@ p {
   background-color: rgb(112, 112, 255);
   border-radius: 6px;
   color: white;
+  cursor: pointer;
 }
 
 .card-container {
@@ -151,15 +152,22 @@ p {
 }
 
 .content {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
 }
 
-.label,
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
 .bookmark-icon {
@@ -173,11 +181,12 @@ p {
 
 .label small {
   background-color: var(--third-color);
-  padding: 1px 4px;
+  padding: 5px 7px;
   border-radius: 2px;
   margin-bottom: 10px;
+  color: white;
 }
-.rating{
+.rating {
   margin-left: 10px;
 }
 .icon {
@@ -202,7 +211,9 @@ p {
   font-size: 14px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .scroll-to-top:hover {
   background-color: var(--button-hover-bg-color);
 }
@@ -258,5 +269,18 @@ hr {
   margin: 10px 0;
 }
 h1 {
+  cursor: default;
   color: white;
+}
+#typed-element {
+  text-align: center;
+}
+[data-aos] {
+  transition-property: transform, opacity !important;
+}
+[data-aos][data-aos-delay='200'] {
+  transition-delay: 200ms;
+}
+[data-aos][data-aos-delay='400'] {
+  transition-delay: 400ms;
 }

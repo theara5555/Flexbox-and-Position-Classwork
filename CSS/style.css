@@ -272,7 +272,7 @@ h1 {
   cursor: default;
   color: white;
 }
-.typed-element {
+#typed-element {
   text-align: center;
 }
 [data-aos] {

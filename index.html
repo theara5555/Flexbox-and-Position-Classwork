@@ -44,9 +44,7 @@
       <section>
         <div class="title">
           <h2>Most Popular Course</h2>
-          <p class="typed-element">
-            choose from hundred of specialist organization.
-          </p>
+          <p><span Id="typed-element"></span></p>
         </div>
         <div class="tabs">
           <button class="tab">Web Design</button>
@@ -55,7 +53,7 @@
           <button class="tab">Marketing</button>
           <button class="tab">Finance</button>
         </div>
-        <div class="card-container">
+        <div class="card-container" data-aos="fade-up">
           <div class="card">
             <div class="image">
               <img src="img/1.png" alt="course thumbn" />
@@ -378,7 +376,7 @@
         once: true,
       });
       document.addEventListener('DOMContentLoaded', () => {
-        new Typed('.typed-element', {
+        new Typed('#typed-element', {
           strings: [
             'Welcome to My Website!',
             'Chhose popular course!',
